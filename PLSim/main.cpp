@@ -6,9 +6,28 @@
 //
 
 #include <iostream>
+#include "MyAtomicModel.h"
+#include "MyEventListener.h"
+#include "dtss_simulator.hpp"
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    dtss::MyAtomicModel my_model("Source");
+    dtss::MyEventListener my_listener(&my_model);
+    
+    dtss::DTSS_Simulator<int> simulator(&my_model);
+    //simulator.addEventListener(&my_listener);
+    
+    dtss::Bag<int> inputBag;
+    int input;
+    
+    while(true){
+        std::cin >> input;
+        inputBag.clear();
+        inputBag.insert(input);
+        simulator.computeNextState(inputBag);
+    }
+    
     return 0;
 }

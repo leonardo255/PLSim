@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF1684D22B7900AE00C39455 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684D12B7900AE00C39455 /* main.cpp */; };
+		DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684DC2B793E0C00C39455 /* dtss_simulator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,13 @@
 /* Begin PBXFileReference section */
 		DF1684CE2B7900AE00C39455 /* PLSim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PLSim; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1684D12B7900AE00C39455 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DF1684DA2B793A9200C39455 /* bag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bag.h; sourceTree = "<group>"; };
+		DF1684DB2B793C2000C39455 /* atomic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = atomic.h; sourceTree = "<group>"; };
+		DF1684DC2B793E0C00C39455 /* dtss_simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dtss_simulator.cpp; sourceTree = "<group>"; };
+		DF1684DD2B793E0C00C39455 /* dtss_simulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dtss_simulator.hpp; sourceTree = "<group>"; };
+		DF1684DF2B79443C00C39455 /* event_listener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event_listener.h; sourceTree = "<group>"; };
+		DF1684E12B794BCE00C39455 /* MyAtomicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAtomicModel.h; sourceTree = "<group>"; };
+		DF1684E22B794DE500C39455 /* MyEventListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEventListener.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,32 @@
 		DF1684D02B7900AE00C39455 /* PLSim */ = {
 			isa = PBXGroup;
 			children = (
+				DF1684E02B794BAE00C39455 /* Models */,
+				DF1684D82B7900E100C39455 /* DTSS */,
 				DF1684D12B7900AE00C39455 /* main.cpp */,
 			);
 			path = PLSim;
+			sourceTree = "<group>";
+		};
+		DF1684D82B7900E100C39455 /* DTSS */ = {
+			isa = PBXGroup;
+			children = (
+				DF1684DA2B793A9200C39455 /* bag.h */,
+				DF1684DB2B793C2000C39455 /* atomic.h */,
+				DF1684DC2B793E0C00C39455 /* dtss_simulator.cpp */,
+				DF1684DD2B793E0C00C39455 /* dtss_simulator.hpp */,
+				DF1684DF2B79443C00C39455 /* event_listener.h */,
+			);
+			path = DTSS;
+			sourceTree = "<group>";
+		};
+		DF1684E02B794BAE00C39455 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF1684E12B794BCE00C39455 /* MyAtomicModel.h */,
+				DF1684E22B794DE500C39455 /* MyEventListener.h */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */,
 				DF1684D22B7900AE00C39455 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
