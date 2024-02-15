@@ -6,28 +6,35 @@
 //
 
 #include <iostream>
-#include "MyAtomicModel.h"
-#include "MyEventListener.h"
-#include "dtss_simulator.hpp"
+
+#include "dess_simulator.hpp"
+#include "product_movement_event.hpp"
+#include "app_gui.hpp"
 
 
 int main(int argc, const char * argv[]) {
     
-    dtss::MyAtomicModel my_model("Source");
-    dtss::MyEventListener my_listener(&my_model);
+    AppGUI app;
+    app.Run();
     
-    dtss::DTSS_Simulator<int> simulator(&my_model);
-    //simulator.addEventListener(&my_listener);
+    std::shared_ptr<DESS_Simulator> simulator = std::make_shared<DESS_Simulator>();
     
-    dtss::Bag<int> inputBag;
-    int input;
+    auto product = std::make_shared<Product>(std::vector<std::string>{"Source", "Assembly", "Drain"});
     
-    while(true){
-        std::cin >> input;
-        inputBag.clear();
-        inputBag.insert(input);
-        simulator.computeNextState(inputBag);
-    }
+    auto source = std::make_shared<Node>(simulator, "Source", 0, 0.0);
+    auto manufacturing = std::make_shared<Node>(simulator, "Manufacturing", 0, 24.5);
+    auto assembly = std::make_shared<Node>(simulator, "Assembly", 0, 4.5);
+    auto drain = std::make_shared<Node>(simulator, "Drain", 0, 10.2);
     
+    source->connectTo(manufacturing);
+    manufacturing->connectTo(assembly);
+    assembly->connectTo(drain);
+    
+    std::shared_ptr<ProductMovementEvent> initialEvent = std::make_shared<ProductMovementEvent>(source, product);
+    simulator->scheduleEventAfterDelay(initialEvent, 0.0);
+    
+    simulator->run();
+    
+
     return 0;
 }

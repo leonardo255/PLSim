@@ -9,6 +9,31 @@
 /* Begin PBXBuildFile section */
 		DF1684D22B7900AE00C39455 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684D12B7900AE00C39455 /* main.cpp */; };
 		DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684DC2B793E0C00C39455 /* dtss_simulator.cpp */; };
+		DF1684E52B7B9A9C00C39455 /* product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684E32B7B9A9C00C39455 /* product.cpp */; };
+		DF1684E92B7B9D3E00C39455 /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684E72B7B9D3E00C39455 /* connector.cpp */; };
+		DF1684EC2B7B9DCC00C39455 /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684EA2B7B9DCC00C39455 /* node.cpp */; };
+		DF1684EF2B7BA14400C39455 /* dess_simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684ED2B7BA14400C39455 /* dess_simulator.cpp */; };
+		DF1684F62B7BA47600C39455 /* product_movement_event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684F42B7BA47600C39455 /* product_movement_event.cpp */; };
+		DF1685032B7BDF1300C39455 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684FA2B7BDF1200C39455 /* imgui_tables.cpp */; };
+		DF1685042B7BDF1300C39455 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684FB2B7BDF1200C39455 /* imgui_demo.cpp */; };
+		DF1685052B7BDF1300C39455 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684FC2B7BDF1200C39455 /* imgui_widgets.cpp */; };
+		DF1685062B7BDF1300C39455 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684FD2B7BDF1200C39455 /* imgui_draw.cpp */; };
+		DF1685072B7BDF1300C39455 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685002B7BDF1300C39455 /* imgui.cpp */; };
+		DF16850A2B7BDF2A00C39455 /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685082B7BDF2A00C39455 /* imgui_impl_glfw.cpp */; };
+		DF16851E2B7BEDB300C39455 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1685162B7BE67600C39455 /* OpenGL.framework */; };
+		DF1685202B7BEE4E00C39455 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF16851F2B7BEE4E00C39455 /* libglfw.3.3.dylib */; };
+		DF1685232B7BF31C00C39455 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685212B7BF31C00C39455 /* app.cpp */; };
+		DF1685292B7C111400C39455 /* app_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685272B7C111400C39455 /* app_gui.cpp */; };
+		DF16852D2B7CE5A400C39455 /* menu_bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16852B2B7CE5A400C39455 /* menu_bar.cpp */; };
+		DF1685312B7CEB6400C39455 /* my_menu_bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16852F2B7CEB6400C39455 /* my_menu_bar.cpp */; };
+		DF16853D2B7E1A3F00C39455 /* imnodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16853C2B7E1A3F00C39455 /* imnodes.cpp */; };
+		DF1685402B7E1AAC00C39455 /* my_node_editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16853E2B7E1AAC00C39455 /* my_node_editor.cpp */; };
+		DF1685472B7E1BA400C39455 /* imgui_impl_opengl2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685462B7E1BA400C39455 /* imgui_impl_opengl2.cpp */; };
+		DF1685512B7E3AF600C39455 /* gui_link.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16854F2B7E3AF600C39455 /* gui_link.cpp */; };
+		DF1685542B7E3BBB00C39455 /* gui_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685522B7E3BBB00C39455 /* gui_node.cpp */; };
+		DF1685572B7E3D5800C39455 /* gui_node_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685552B7E3D5800C39455 /* gui_node_input.cpp */; };
+		DF16855A2B7E3DAA00C39455 /* gui_node_output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685582B7E3DAA00C39455 /* gui_node_output.cpp */; };
+		DF16855D2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16855B2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +58,58 @@
 		DF1684DF2B79443C00C39455 /* event_listener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event_listener.h; sourceTree = "<group>"; };
 		DF1684E12B794BCE00C39455 /* MyAtomicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAtomicModel.h; sourceTree = "<group>"; };
 		DF1684E22B794DE500C39455 /* MyEventListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEventListener.h; sourceTree = "<group>"; };
+		DF1684E32B7B9A9C00C39455 /* product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = product.cpp; sourceTree = "<group>"; };
+		DF1684E42B7B9A9C00C39455 /* product.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = product.hpp; sourceTree = "<group>"; };
+		DF1684E72B7B9D3E00C39455 /* connector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = connector.cpp; sourceTree = "<group>"; };
+		DF1684E82B7B9D3E00C39455 /* connector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = connector.hpp; sourceTree = "<group>"; };
+		DF1684EA2B7B9DCC00C39455 /* node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = node.cpp; sourceTree = "<group>"; };
+		DF1684EB2B7B9DCC00C39455 /* node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = node.hpp; sourceTree = "<group>"; };
+		DF1684ED2B7BA14400C39455 /* dess_simulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dess_simulator.cpp; sourceTree = "<group>"; };
+		DF1684EE2B7BA14400C39455 /* dess_simulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = dess_simulator.hpp; sourceTree = "<group>"; };
+		DF1684F12B7BA20500C39455 /* event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = event.hpp; sourceTree = "<group>"; };
+		DF1684F42B7BA47600C39455 /* product_movement_event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = product_movement_event.cpp; sourceTree = "<group>"; };
+		DF1684F52B7BA47600C39455 /* product_movement_event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = product_movement_event.hpp; sourceTree = "<group>"; };
+		DF1684F82B7BDF1200C39455 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
+		DF1684F92B7BDF1200C39455 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		DF1684FA2B7BDF1200C39455 /* imgui_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_tables.cpp; sourceTree = "<group>"; };
+		DF1684FB2B7BDF1200C39455 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
+		DF1684FC2B7BDF1200C39455 /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_widgets.cpp; sourceTree = "<group>"; };
+		DF1684FD2B7BDF1200C39455 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		DF1684FE2B7BDF1200C39455 /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_rectpack.h; sourceTree = "<group>"; };
+		DF1684FF2B7BDF1300C39455 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		DF1685002B7BDF1300C39455 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		DF1685012B7BDF1300C39455 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		DF1685022B7BDF1300C39455 /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_truetype.h; sourceTree = "<group>"; };
+		DF1685082B7BDF2A00C39455 /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_impl_glfw.cpp; sourceTree = "<group>"; };
+		DF1685092B7BDF2A00C39455 /* imgui_impl_glfw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_glfw.h; sourceTree = "<group>"; };
+		DF1685162B7BE67600C39455 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		DF1685182B7BE70C00C39455 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		DF16851F2B7BEE4E00C39455 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3.9/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		DF1685212B7BF31C00C39455 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
+		DF1685222B7BF31C00C39455 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
+		DF1685272B7C111400C39455 /* app_gui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app_gui.cpp; sourceTree = "<group>"; };
+		DF1685282B7C111400C39455 /* app_gui.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app_gui.hpp; sourceTree = "<group>"; };
+		DF16852B2B7CE5A400C39455 /* menu_bar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menu_bar.cpp; sourceTree = "<group>"; };
+		DF16852C2B7CE5A400C39455 /* menu_bar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = menu_bar.hpp; sourceTree = "<group>"; };
+		DF16852F2B7CEB6400C39455 /* my_menu_bar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_menu_bar.cpp; sourceTree = "<group>"; };
+		DF1685302B7CEB6400C39455 /* my_menu_bar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_menu_bar.hpp; sourceTree = "<group>"; };
+		DF16853A2B7E1A3F00C39455 /* imnodes_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imnodes_internal.h; path = "../../../../imnodes-master/imnodes_internal.h"; sourceTree = "<group>"; };
+		DF16853B2B7E1A3F00C39455 /* imnodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imnodes.h; path = "../../../../imnodes-master/imnodes.h"; sourceTree = "<group>"; };
+		DF16853C2B7E1A3F00C39455 /* imnodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imnodes.cpp; path = "../../../../imnodes-master/imnodes.cpp"; sourceTree = "<group>"; };
+		DF16853E2B7E1AAC00C39455 /* my_node_editor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_node_editor.cpp; sourceTree = "<group>"; };
+		DF16853F2B7E1AAC00C39455 /* my_node_editor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_node_editor.hpp; sourceTree = "<group>"; };
+		DF1685452B7E1BA400C39455 /* imgui_impl_opengl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_impl_opengl2.h; path = "../../../../imgui-master/backends/imgui_impl_opengl2.h"; sourceTree = "<group>"; };
+		DF1685462B7E1BA400C39455 /* imgui_impl_opengl2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_opengl2.cpp; path = "../../../../imgui-master/backends/imgui_impl_opengl2.cpp"; sourceTree = "<group>"; };
+		DF16854F2B7E3AF600C39455 /* gui_link.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_link.cpp; sourceTree = "<group>"; };
+		DF1685502B7E3AF600C39455 /* gui_link.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gui_link.hpp; sourceTree = "<group>"; };
+		DF1685522B7E3BBB00C39455 /* gui_node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_node.cpp; sourceTree = "<group>"; };
+		DF1685532B7E3BBB00C39455 /* gui_node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gui_node.hpp; sourceTree = "<group>"; };
+		DF1685552B7E3D5800C39455 /* gui_node_input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_node_input.cpp; sourceTree = "<group>"; };
+		DF1685562B7E3D5800C39455 /* gui_node_input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gui_node_input.hpp; sourceTree = "<group>"; };
+		DF1685582B7E3DAA00C39455 /* gui_node_output.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_node_output.cpp; sourceTree = "<group>"; };
+		DF1685592B7E3DAA00C39455 /* gui_node_output.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gui_node_output.hpp; sourceTree = "<group>"; };
+		DF16855B2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_node_editor_menu_bar.cpp; sourceTree = "<group>"; };
+		DF16855C2B7E7AC200C39455 /* my_node_editor_menu_bar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_node_editor_menu_bar.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1685202B7BEE4E00C39455 /* libglfw.3.3.dylib in Frameworks */,
+				DF16851E2B7BEDB300C39455 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +130,7 @@
 			children = (
 				DF1684D02B7900AE00C39455 /* PLSim */,
 				DF1684CF2B7900AE00C39455 /* Products */,
+				DF1685152B7BE67500C39455 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,23 +145,28 @@
 		DF1684D02B7900AE00C39455 /* PLSim */ = {
 			isa = PBXGroup;
 			children = (
-				DF1684E02B794BAE00C39455 /* Models */,
-				DF1684D82B7900E100C39455 /* DTSS */,
+				DF1685382B7E1A1400C39455 /* external_packages */,
+				DF16850E2B7BE17A00C39455 /* gui */,
+				DF1684E62B7B9AB100C39455 /* dess */,
+				DF1684D82B7900E100C39455 /* dtss */,
 				DF1684D12B7900AE00C39455 /* main.cpp */,
+				DF1685212B7BF31C00C39455 /* app.cpp */,
+				DF1685222B7BF31C00C39455 /* app.hpp */,
 			);
 			path = PLSim;
 			sourceTree = "<group>";
 		};
-		DF1684D82B7900E100C39455 /* DTSS */ = {
+		DF1684D82B7900E100C39455 /* dtss */ = {
 			isa = PBXGroup;
 			children = (
+				DF1684E02B794BAE00C39455 /* Models */,
 				DF1684DA2B793A9200C39455 /* bag.h */,
 				DF1684DB2B793C2000C39455 /* atomic.h */,
 				DF1684DC2B793E0C00C39455 /* dtss_simulator.cpp */,
 				DF1684DD2B793E0C00C39455 /* dtss_simulator.hpp */,
 				DF1684DF2B79443C00C39455 /* event_listener.h */,
 			);
-			path = DTSS;
+			path = dtss;
 			sourceTree = "<group>";
 		};
 		DF1684E02B794BAE00C39455 /* Models */ = {
@@ -91,6 +176,148 @@
 				DF1684E22B794DE500C39455 /* MyEventListener.h */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DF1684E62B7B9AB100C39455 /* dess */ = {
+			isa = PBXGroup;
+			children = (
+				DF1684F32B7BA43F00C39455 /* Events */,
+				DF1684E32B7B9A9C00C39455 /* product.cpp */,
+				DF1684E42B7B9A9C00C39455 /* product.hpp */,
+				DF1684E72B7B9D3E00C39455 /* connector.cpp */,
+				DF1684E82B7B9D3E00C39455 /* connector.hpp */,
+				DF1684EA2B7B9DCC00C39455 /* node.cpp */,
+				DF1684EB2B7B9DCC00C39455 /* node.hpp */,
+				DF1684ED2B7BA14400C39455 /* dess_simulator.cpp */,
+				DF1684EE2B7BA14400C39455 /* dess_simulator.hpp */,
+			);
+			path = dess;
+			sourceTree = "<group>";
+		};
+		DF1684F32B7BA43F00C39455 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				DF1684F12B7BA20500C39455 /* event.hpp */,
+				DF1684F42B7BA47600C39455 /* product_movement_event.cpp */,
+				DF1684F52B7BA47600C39455 /* product_movement_event.hpp */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		DF1684F72B7BDD1200C39455 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685462B7E1BA400C39455 /* imgui_impl_opengl2.cpp */,
+				DF1685452B7E1BA400C39455 /* imgui_impl_opengl2.h */,
+				DF1685082B7BDF2A00C39455 /* imgui_impl_glfw.cpp */,
+				DF1685092B7BDF2A00C39455 /* imgui_impl_glfw.h */,
+				DF1684FF2B7BDF1300C39455 /* imconfig.h */,
+				DF1684FB2B7BDF1200C39455 /* imgui_demo.cpp */,
+				DF1684FD2B7BDF1200C39455 /* imgui_draw.cpp */,
+				DF1684F92B7BDF1200C39455 /* imgui_internal.h */,
+				DF1684FA2B7BDF1200C39455 /* imgui_tables.cpp */,
+				DF1684FC2B7BDF1200C39455 /* imgui_widgets.cpp */,
+				DF1685002B7BDF1300C39455 /* imgui.cpp */,
+				DF1685012B7BDF1300C39455 /* imgui.h */,
+				DF1684FE2B7BDF1200C39455 /* imstb_rectpack.h */,
+				DF1684F82B7BDF1200C39455 /* imstb_textedit.h */,
+				DF1685022B7BDF1300C39455 /* imstb_truetype.h */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		DF16850E2B7BE17A00C39455 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685482B7E267200C39455 /* node_editor */,
+				DF16852E2B7CEB4D00C39455 /* my_elements */,
+				DF16852A2B7CE58400C39455 /* base_elements */,
+				DF1685272B7C111400C39455 /* app_gui.cpp */,
+				DF1685282B7C111400C39455 /* app_gui.hpp */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		DF1685152B7BE67500C39455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF16851F2B7BEE4E00C39455 /* libglfw.3.3.dylib */,
+				DF1685182B7BE70C00C39455 /* GLUT.framework */,
+				DF1685162B7BE67600C39455 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF16852A2B7CE58400C39455 /* base_elements */ = {
+			isa = PBXGroup;
+			children = (
+				DF16852B2B7CE5A400C39455 /* menu_bar.cpp */,
+				DF16852C2B7CE5A400C39455 /* menu_bar.hpp */,
+			);
+			path = base_elements;
+			sourceTree = "<group>";
+		};
+		DF16852E2B7CEB4D00C39455 /* my_elements */ = {
+			isa = PBXGroup;
+			children = (
+				DF16852F2B7CEB6400C39455 /* my_menu_bar.cpp */,
+				DF1685302B7CEB6400C39455 /* my_menu_bar.hpp */,
+			);
+			path = my_elements;
+			sourceTree = "<group>";
+		};
+		DF1685382B7E1A1400C39455 /* external_packages */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685392B7E1A2200C39455 /* imnode */,
+				DF1684F72B7BDD1200C39455 /* imgui */,
+			);
+			path = external_packages;
+			sourceTree = "<group>";
+		};
+		DF1685392B7E1A2200C39455 /* imnode */ = {
+			isa = PBXGroup;
+			children = (
+				DF16853A2B7E1A3F00C39455 /* imnodes_internal.h */,
+				DF16853C2B7E1A3F00C39455 /* imnodes.cpp */,
+				DF16853B2B7E1A3F00C39455 /* imnodes.h */,
+			);
+			path = imnode;
+			sourceTree = "<group>";
+		};
+		DF1685482B7E267200C39455 /* node_editor */ = {
+			isa = PBXGroup;
+			children = (
+				DF16854C2B7E391100C39455 /* my_elements */,
+				DF1685492B7E268800C39455 /* base_elements */,
+			);
+			path = node_editor;
+			sourceTree = "<group>";
+		};
+		DF1685492B7E268800C39455 /* base_elements */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685522B7E3BBB00C39455 /* gui_node.cpp */,
+				DF1685532B7E3BBB00C39455 /* gui_node.hpp */,
+				DF16854F2B7E3AF600C39455 /* gui_link.cpp */,
+				DF1685502B7E3AF600C39455 /* gui_link.hpp */,
+				DF1685552B7E3D5800C39455 /* gui_node_input.cpp */,
+				DF1685562B7E3D5800C39455 /* gui_node_input.hpp */,
+				DF1685582B7E3DAA00C39455 /* gui_node_output.cpp */,
+				DF1685592B7E3DAA00C39455 /* gui_node_output.hpp */,
+			);
+			path = base_elements;
+			sourceTree = "<group>";
+		};
+		DF16854C2B7E391100C39455 /* my_elements */ = {
+			isa = PBXGroup;
+			children = (
+				DF16853E2B7E1AAC00C39455 /* my_node_editor.cpp */,
+				DF16853F2B7E1AAC00C39455 /* my_node_editor.hpp */,
+				DF16855B2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp */,
+				DF16855C2B7E7AC200C39455 /* my_node_editor_menu_bar.hpp */,
+			);
+			path = my_elements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +377,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF1685572B7E3D5800C39455 /* gui_node_input.cpp in Sources */,
 				DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */,
+				DF1685542B7E3BBB00C39455 /* gui_node.cpp in Sources */,
+				DF1684E92B7B9D3E00C39455 /* connector.cpp in Sources */,
+				DF16853D2B7E1A3F00C39455 /* imnodes.cpp in Sources */,
+				DF1684E52B7B9A9C00C39455 /* product.cpp in Sources */,
+				DF1685052B7BDF1300C39455 /* imgui_widgets.cpp in Sources */,
+				DF1684EC2B7B9DCC00C39455 /* node.cpp in Sources */,
+				DF1685072B7BDF1300C39455 /* imgui.cpp in Sources */,
 				DF1684D22B7900AE00C39455 /* main.cpp in Sources */,
+				DF1685232B7BF31C00C39455 /* app.cpp in Sources */,
+				DF1685062B7BDF1300C39455 /* imgui_draw.cpp in Sources */,
+				DF1685512B7E3AF600C39455 /* gui_link.cpp in Sources */,
+				DF1685292B7C111400C39455 /* app_gui.cpp in Sources */,
+				DF16850A2B7BDF2A00C39455 /* imgui_impl_glfw.cpp in Sources */,
+				DF16852D2B7CE5A400C39455 /* menu_bar.cpp in Sources */,
+				DF1685402B7E1AAC00C39455 /* my_node_editor.cpp in Sources */,
+				DF1684F62B7BA47600C39455 /* product_movement_event.cpp in Sources */,
+				DF1685032B7BDF1300C39455 /* imgui_tables.cpp in Sources */,
+				DF16855D2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp in Sources */,
+				DF1685472B7E1BA400C39455 /* imgui_impl_opengl2.cpp in Sources */,
+				DF1684EF2B7BA14400C39455 /* dess_simulator.cpp in Sources */,
+				DF1685312B7CEB6400C39455 /* my_menu_bar.cpp in Sources */,
+				DF16855A2B7E3DAA00C39455 /* gui_node_output.cpp in Sources */,
+				DF1685042B7BDF1300C39455 /* imgui_demo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +458,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.9/include,
+					/usr/local/Cellar/sdl2/2.30.0/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -260,6 +514,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/glfw/3.3.9/include,
+					/usr/local/Cellar/sdl2/2.30.0/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -271,6 +529,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.9/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -279,6 +541,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3.9/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
