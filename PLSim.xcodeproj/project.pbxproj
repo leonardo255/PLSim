@@ -22,18 +22,26 @@
 		DF16850A2B7BDF2A00C39455 /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685082B7BDF2A00C39455 /* imgui_impl_glfw.cpp */; };
 		DF16851E2B7BEDB300C39455 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1685162B7BE67600C39455 /* OpenGL.framework */; };
 		DF1685202B7BEE4E00C39455 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF16851F2B7BEE4E00C39455 /* libglfw.3.3.dylib */; };
-		DF1685232B7BF31C00C39455 /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685212B7BF31C00C39455 /* app.cpp */; };
-		DF1685292B7C111400C39455 /* app_gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685272B7C111400C39455 /* app_gui.cpp */; };
-		DF16852D2B7CE5A400C39455 /* menu_bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16852B2B7CE5A400C39455 /* menu_bar.cpp */; };
-		DF1685312B7CEB6400C39455 /* my_menu_bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16852F2B7CEB6400C39455 /* my_menu_bar.cpp */; };
+		DF1685232B7BF31C00C39455 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685212B7BF31C00C39455 /* App.cpp */; };
 		DF16853D2B7E1A3F00C39455 /* imnodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16853C2B7E1A3F00C39455 /* imnodes.cpp */; };
-		DF1685402B7E1AAC00C39455 /* my_node_editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16853E2B7E1AAC00C39455 /* my_node_editor.cpp */; };
+		DF1685402B7E1AAC00C39455 /* NodeEditorPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16853E2B7E1AAC00C39455 /* NodeEditorPanel.cpp */; };
 		DF1685472B7E1BA400C39455 /* imgui_impl_opengl2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685462B7E1BA400C39455 /* imgui_impl_opengl2.cpp */; };
 		DF1685512B7E3AF600C39455 /* gui_link.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16854F2B7E3AF600C39455 /* gui_link.cpp */; };
 		DF1685542B7E3BBB00C39455 /* gui_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685522B7E3BBB00C39455 /* gui_node.cpp */; };
 		DF1685572B7E3D5800C39455 /* gui_node_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685552B7E3D5800C39455 /* gui_node_input.cpp */; };
 		DF16855A2B7E3DAA00C39455 /* gui_node_output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685582B7E3DAA00C39455 /* gui_node_output.cpp */; };
-		DF16855D2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16855B2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp */; };
+		DF1685612B7F7A6100C39455 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16855F2B7F7A6100C39455 /* Window.cpp */; };
+		DF1685642B7F7E6D00C39455 /* EditorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685622B7F7E6D00C39455 /* EditorLayer.cpp */; };
+		DF1685672B7F803800C39455 /* LayerStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685652B7F803800C39455 /* LayerStack.cpp */; };
+		DF16856A2B7F804A00C39455 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685682B7F804A00C39455 /* Layer.cpp */; };
+		DF16856D2B7F835A00C39455 /* ImGuiLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF16856B2B7F835A00C39455 /* ImGuiLayer.cpp */; };
+		DF1685A32B811E5F00C39455 /* PLSimApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685A12B811E5F00C39455 /* PLSimApp.cpp */; };
+		DF1685A62B8124C100C39455 /* PLSimWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1685A42B8124C100C39455 /* PLSimWindow.cpp */; };
+		DF544BA72B87762700DB9568 /* Project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF544BA52B87762700DB9568 /* Project.cpp */; };
+		DF544BAA2B87764A00DB9568 /* ProjectSerialiser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF544BA82B87764A00DB9568 /* ProjectSerialiser.cpp */; };
+		DF544BB12B8776E600DB9568 /* HierarchyPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF544BAF2B8776E600DB9568 /* HierarchyPanel.cpp */; };
+		DF544BB42B8777DB00DB9568 /* InspectionPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF544BB22B8777DB00DB9568 /* InspectionPanel.cpp */; };
+		DFAF228E2B8519EF00410DAA /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFAF228C2B8519EF00410DAA /* Scene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,19 +93,13 @@
 		DF1685162B7BE67600C39455 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		DF1685182B7BE70C00C39455 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		DF16851F2B7BEE4E00C39455 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3.9/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		DF1685212B7BF31C00C39455 /* app.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app.cpp; sourceTree = "<group>"; };
-		DF1685222B7BF31C00C39455 /* app.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app.hpp; sourceTree = "<group>"; };
-		DF1685272B7C111400C39455 /* app_gui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = app_gui.cpp; sourceTree = "<group>"; };
-		DF1685282B7C111400C39455 /* app_gui.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = app_gui.hpp; sourceTree = "<group>"; };
-		DF16852B2B7CE5A400C39455 /* menu_bar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = menu_bar.cpp; sourceTree = "<group>"; };
-		DF16852C2B7CE5A400C39455 /* menu_bar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = menu_bar.hpp; sourceTree = "<group>"; };
-		DF16852F2B7CEB6400C39455 /* my_menu_bar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_menu_bar.cpp; sourceTree = "<group>"; };
-		DF1685302B7CEB6400C39455 /* my_menu_bar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_menu_bar.hpp; sourceTree = "<group>"; };
+		DF1685212B7BF31C00C39455 /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		DF1685222B7BF31C00C39455 /* App.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = App.hpp; sourceTree = "<group>"; };
 		DF16853A2B7E1A3F00C39455 /* imnodes_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imnodes_internal.h; path = "../../../../imnodes-master/imnodes_internal.h"; sourceTree = "<group>"; };
 		DF16853B2B7E1A3F00C39455 /* imnodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imnodes.h; path = "../../../../imnodes-master/imnodes.h"; sourceTree = "<group>"; };
 		DF16853C2B7E1A3F00C39455 /* imnodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imnodes.cpp; path = "../../../../imnodes-master/imnodes.cpp"; sourceTree = "<group>"; };
-		DF16853E2B7E1AAC00C39455 /* my_node_editor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_node_editor.cpp; sourceTree = "<group>"; };
-		DF16853F2B7E1AAC00C39455 /* my_node_editor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_node_editor.hpp; sourceTree = "<group>"; };
+		DF16853E2B7E1AAC00C39455 /* NodeEditorPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NodeEditorPanel.cpp; sourceTree = "<group>"; };
+		DF16853F2B7E1AAC00C39455 /* NodeEditorPanel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NodeEditorPanel.hpp; sourceTree = "<group>"; };
 		DF1685452B7E1BA400C39455 /* imgui_impl_opengl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imgui_impl_opengl2.h; path = "../../../../imgui-master/backends/imgui_impl_opengl2.h"; sourceTree = "<group>"; };
 		DF1685462B7E1BA400C39455 /* imgui_impl_opengl2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_opengl2.cpp; path = "../../../../imgui-master/backends/imgui_impl_opengl2.cpp"; sourceTree = "<group>"; };
 		DF16854F2B7E3AF600C39455 /* gui_link.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_link.cpp; sourceTree = "<group>"; };
@@ -108,8 +110,34 @@
 		DF1685562B7E3D5800C39455 /* gui_node_input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gui_node_input.hpp; sourceTree = "<group>"; };
 		DF1685582B7E3DAA00C39455 /* gui_node_output.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gui_node_output.cpp; sourceTree = "<group>"; };
 		DF1685592B7E3DAA00C39455 /* gui_node_output.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gui_node_output.hpp; sourceTree = "<group>"; };
-		DF16855B2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_node_editor_menu_bar.cpp; sourceTree = "<group>"; };
-		DF16855C2B7E7AC200C39455 /* my_node_editor_menu_bar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = my_node_editor_menu_bar.hpp; sourceTree = "<group>"; };
+		DF16855F2B7F7A6100C39455 /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		DF1685602B7F7A6100C39455 /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		DF1685622B7F7E6D00C39455 /* EditorLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EditorLayer.cpp; sourceTree = "<group>"; };
+		DF1685632B7F7E6D00C39455 /* EditorLayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EditorLayer.hpp; sourceTree = "<group>"; };
+		DF1685652B7F803800C39455 /* LayerStack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LayerStack.cpp; sourceTree = "<group>"; };
+		DF1685662B7F803800C39455 /* LayerStack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LayerStack.hpp; sourceTree = "<group>"; };
+		DF1685682B7F804A00C39455 /* Layer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Layer.cpp; sourceTree = "<group>"; };
+		DF1685692B7F804A00C39455 /* Layer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Layer.hpp; sourceTree = "<group>"; };
+		DF16856B2B7F835A00C39455 /* ImGuiLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImGuiLayer.cpp; sourceTree = "<group>"; };
+		DF16856C2B7F835A00C39455 /* ImGuiLayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImGuiLayer.hpp; sourceTree = "<group>"; };
+		DF16859E2B7FDB0200C39455 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DF16859F2B7FDD8E00C39455 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DF1685A12B811E5F00C39455 /* PLSimApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PLSimApp.cpp; sourceTree = "<group>"; };
+		DF1685A22B811E5F00C39455 /* PLSimApp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PLSimApp.hpp; sourceTree = "<group>"; };
+		DF1685A42B8124C100C39455 /* PLSimWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PLSimWindow.cpp; sourceTree = "<group>"; };
+		DF1685A52B8124C100C39455 /* PLSimWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PLSimWindow.hpp; sourceTree = "<group>"; };
+		DF1685A92B82585F00C39455 /* IconsMaterialDesignIcons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IconsMaterialDesignIcons.h; sourceTree = "<group>"; };
+		DF1685AA2B825BAF00C39455 /* materialdesignicons-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "materialdesignicons-webfont.ttf"; sourceTree = "<group>"; };
+		DF544BA52B87762700DB9568 /* Project.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Project.cpp; sourceTree = "<group>"; };
+		DF544BA62B87762700DB9568 /* Project.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Project.hpp; sourceTree = "<group>"; };
+		DF544BA82B87764A00DB9568 /* ProjectSerialiser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectSerialiser.cpp; sourceTree = "<group>"; };
+		DF544BA92B87764A00DB9568 /* ProjectSerialiser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProjectSerialiser.hpp; sourceTree = "<group>"; };
+		DF544BAF2B8776E600DB9568 /* HierarchyPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HierarchyPanel.cpp; sourceTree = "<group>"; };
+		DF544BB02B8776E600DB9568 /* HierarchyPanel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HierarchyPanel.hpp; sourceTree = "<group>"; };
+		DF544BB22B8777DB00DB9568 /* InspectionPanel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InspectionPanel.cpp; sourceTree = "<group>"; };
+		DF544BB32B8777DB00DB9568 /* InspectionPanel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InspectionPanel.hpp; sourceTree = "<group>"; };
+		DFAF228C2B8519EF00410DAA /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		DFAF228D2B8519EF00410DAA /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,13 +173,10 @@
 		DF1684D02B7900AE00C39455 /* PLSim */ = {
 			isa = PBXGroup;
 			children = (
-				DF1685382B7E1A1400C39455 /* external_packages */,
-				DF16850E2B7BE17A00C39455 /* gui */,
-				DF1684E62B7B9AB100C39455 /* dess */,
-				DF1684D82B7900E100C39455 /* dtss */,
+				DF16856F2B7FACE200C39455 /* Engine */,
+				DF16856E2B7FACD800C39455 /* PLSim */,
+				DF1685382B7E1A1400C39455 /* Packages */,
 				DF1684D12B7900AE00C39455 /* main.cpp */,
-				DF1685212B7BF31C00C39455 /* app.cpp */,
-				DF1685222B7BF31C00C39455 /* app.hpp */,
 			);
 			path = PLSim;
 			sourceTree = "<group>";
@@ -207,6 +232,7 @@
 		DF1684F72B7BDD1200C39455 /* imgui */ = {
 			isa = PBXGroup;
 			children = (
+				DF1685A92B82585F00C39455 /* IconsMaterialDesignIcons.h */,
 				DF1685462B7E1BA400C39455 /* imgui_impl_opengl2.cpp */,
 				DF1685452B7E1BA400C39455 /* imgui_impl_opengl2.h */,
 				DF1685082B7BDF2A00C39455 /* imgui_impl_glfw.cpp */,
@@ -229,11 +255,10 @@
 		DF16850E2B7BE17A00C39455 /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				DF544BAB2B87769D00DB9568 /* Panels */,
 				DF1685482B7E267200C39455 /* node_editor */,
-				DF16852E2B7CEB4D00C39455 /* my_elements */,
-				DF16852A2B7CE58400C39455 /* base_elements */,
-				DF1685272B7C111400C39455 /* app_gui.cpp */,
-				DF1685282B7C111400C39455 /* app_gui.hpp */,
+				DF1685622B7F7E6D00C39455 /* EditorLayer.cpp */,
+				DF1685632B7F7E6D00C39455 /* EditorLayer.hpp */,
 			);
 			path = gui;
 			sourceTree = "<group>";
@@ -248,31 +273,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF16852A2B7CE58400C39455 /* base_elements */ = {
+		DF1685382B7E1A1400C39455 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				DF16852B2B7CE5A400C39455 /* menu_bar.cpp */,
-				DF16852C2B7CE5A400C39455 /* menu_bar.hpp */,
 			);
-			path = base_elements;
-			sourceTree = "<group>";
-		};
-		DF16852E2B7CEB4D00C39455 /* my_elements */ = {
-			isa = PBXGroup;
-			children = (
-				DF16852F2B7CEB6400C39455 /* my_menu_bar.cpp */,
-				DF1685302B7CEB6400C39455 /* my_menu_bar.hpp */,
-			);
-			path = my_elements;
-			sourceTree = "<group>";
-		};
-		DF1685382B7E1A1400C39455 /* external_packages */ = {
-			isa = PBXGroup;
-			children = (
-				DF1685392B7E1A2200C39455 /* imnode */,
-				DF1684F72B7BDD1200C39455 /* imgui */,
-			);
-			path = external_packages;
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		DF1685392B7E1A2200C39455 /* imnode */ = {
@@ -288,7 +293,6 @@
 		DF1685482B7E267200C39455 /* node_editor */ = {
 			isa = PBXGroup;
 			children = (
-				DF16854C2B7E391100C39455 /* my_elements */,
 				DF1685492B7E268800C39455 /* base_elements */,
 			);
 			path = node_editor;
@@ -309,15 +313,131 @@
 			path = base_elements;
 			sourceTree = "<group>";
 		};
-		DF16854C2B7E391100C39455 /* my_elements */ = {
+		DF16855E2B7F7A2A00C39455 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				DF16853E2B7E1AAC00C39455 /* my_node_editor.cpp */,
-				DF16853F2B7E1AAC00C39455 /* my_node_editor.hpp */,
-				DF16855B2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp */,
-				DF16855C2B7E7AC200C39455 /* my_node_editor_menu_bar.hpp */,
+				DF1685212B7BF31C00C39455 /* App.cpp */,
+				DF1685222B7BF31C00C39455 /* App.hpp */,
+				DF16855F2B7F7A6100C39455 /* Window.cpp */,
+				DF1685602B7F7A6100C39455 /* Window.hpp */,
+				DF1685652B7F803800C39455 /* LayerStack.cpp */,
+				DF1685662B7F803800C39455 /* LayerStack.hpp */,
+				DF1685682B7F804A00C39455 /* Layer.cpp */,
+				DF1685692B7F804A00C39455 /* Layer.hpp */,
 			);
-			path = my_elements;
+			path = core;
+			sourceTree = "<group>";
+		};
+		DF16856E2B7FACD800C39455 /* PLSim */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685A02B811E4C00C39455 /* src */,
+				DF1685712B7FDA9900C39455 /* assets */,
+				DF1684D82B7900E100C39455 /* dtss */,
+				DF1684E62B7B9AB100C39455 /* dess */,
+				DF16850E2B7BE17A00C39455 /* gui */,
+			);
+			path = PLSim;
+			sourceTree = "<group>";
+		};
+		DF16856F2B7FACE200C39455 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				DF544BA42B87761400DB9568 /* Project */,
+				DFAF228F2B8519F300410DAA /* Scene */,
+				DF1685702B7FAD4E00C39455 /* gui */,
+				DF1684F72B7BDD1200C39455 /* imgui */,
+				DF1685392B7E1A2200C39455 /* imnode */,
+				DF16855E2B7F7A2A00C39455 /* core */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		DF1685702B7FAD4E00C39455 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				DF16856B2B7F835A00C39455 /* ImGuiLayer.cpp */,
+				DF16856C2B7F835A00C39455 /* ImGuiLayer.hpp */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		DF1685712B7FDA9900C39455 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685722B7FDAA000C39455 /* fonts */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		DF1685722B7FDAA000C39455 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685A72B8257FD00C39455 /* materialicons */,
+				DF1685732B7FDAA700C39455 /* opensans */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		DF1685732B7FDAA700C39455 /* opensans */ = {
+			isa = PBXGroup;
+			children = (
+				DF16859F2B7FDD8E00C39455 /* OpenSans-Regular.ttf */,
+				DF16859E2B7FDB0200C39455 /* OpenSans-Bold.ttf */,
+			);
+			path = opensans;
+			sourceTree = "<group>";
+		};
+		DF1685A02B811E4C00C39455 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685A12B811E5F00C39455 /* PLSimApp.cpp */,
+				DF1685A22B811E5F00C39455 /* PLSimApp.hpp */,
+				DF1685A42B8124C100C39455 /* PLSimWindow.cpp */,
+				DF1685A52B8124C100C39455 /* PLSimWindow.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DF1685A72B8257FD00C39455 /* materialicons */ = {
+			isa = PBXGroup;
+			children = (
+				DF1685AA2B825BAF00C39455 /* materialdesignicons-webfont.ttf */,
+			);
+			path = materialicons;
+			sourceTree = "<group>";
+		};
+		DF544BA42B87761400DB9568 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				DF544BA52B87762700DB9568 /* Project.cpp */,
+				DF544BA62B87762700DB9568 /* Project.hpp */,
+				DF544BA82B87764A00DB9568 /* ProjectSerialiser.cpp */,
+				DF544BA92B87764A00DB9568 /* ProjectSerialiser.hpp */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		DF544BAB2B87769D00DB9568 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				DF16853E2B7E1AAC00C39455 /* NodeEditorPanel.cpp */,
+				DF16853F2B7E1AAC00C39455 /* NodeEditorPanel.hpp */,
+				DF544BAF2B8776E600DB9568 /* HierarchyPanel.cpp */,
+				DF544BB02B8776E600DB9568 /* HierarchyPanel.hpp */,
+				DF544BB22B8777DB00DB9568 /* InspectionPanel.cpp */,
+				DF544BB32B8777DB00DB9568 /* InspectionPanel.hpp */,
+			);
+			path = Panels;
+			sourceTree = "<group>";
+		};
+		DFAF228F2B8519F300410DAA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DFAF228C2B8519EF00410DAA /* Scene.cpp */,
+				DFAF228D2B8519EF00410DAA /* Scene.hpp */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,29 +499,37 @@
 			files = (
 				DF1685572B7E3D5800C39455 /* gui_node_input.cpp in Sources */,
 				DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */,
+				DF1685A32B811E5F00C39455 /* PLSimApp.cpp in Sources */,
 				DF1685542B7E3BBB00C39455 /* gui_node.cpp in Sources */,
 				DF1684E92B7B9D3E00C39455 /* connector.cpp in Sources */,
 				DF16853D2B7E1A3F00C39455 /* imnodes.cpp in Sources */,
 				DF1684E52B7B9A9C00C39455 /* product.cpp in Sources */,
+				DF544BA72B87762700DB9568 /* Project.cpp in Sources */,
+				DF1685672B7F803800C39455 /* LayerStack.cpp in Sources */,
+				DF544BB12B8776E600DB9568 /* HierarchyPanel.cpp in Sources */,
 				DF1685052B7BDF1300C39455 /* imgui_widgets.cpp in Sources */,
 				DF1684EC2B7B9DCC00C39455 /* node.cpp in Sources */,
 				DF1685072B7BDF1300C39455 /* imgui.cpp in Sources */,
 				DF1684D22B7900AE00C39455 /* main.cpp in Sources */,
-				DF1685232B7BF31C00C39455 /* app.cpp in Sources */,
+				DF16856A2B7F804A00C39455 /* Layer.cpp in Sources */,
+				DF1685A62B8124C100C39455 /* PLSimWindow.cpp in Sources */,
+				DF1685232B7BF31C00C39455 /* App.cpp in Sources */,
+				DF544BAA2B87764A00DB9568 /* ProjectSerialiser.cpp in Sources */,
+				DF16856D2B7F835A00C39455 /* ImGuiLayer.cpp in Sources */,
 				DF1685062B7BDF1300C39455 /* imgui_draw.cpp in Sources */,
 				DF1685512B7E3AF600C39455 /* gui_link.cpp in Sources */,
-				DF1685292B7C111400C39455 /* app_gui.cpp in Sources */,
+				DFAF228E2B8519EF00410DAA /* Scene.cpp in Sources */,
+				DF544BB42B8777DB00DB9568 /* InspectionPanel.cpp in Sources */,
 				DF16850A2B7BDF2A00C39455 /* imgui_impl_glfw.cpp in Sources */,
-				DF16852D2B7CE5A400C39455 /* menu_bar.cpp in Sources */,
-				DF1685402B7E1AAC00C39455 /* my_node_editor.cpp in Sources */,
+				DF1685612B7F7A6100C39455 /* Window.cpp in Sources */,
+				DF1685402B7E1AAC00C39455 /* NodeEditorPanel.cpp in Sources */,
 				DF1684F62B7BA47600C39455 /* product_movement_event.cpp in Sources */,
 				DF1685032B7BDF1300C39455 /* imgui_tables.cpp in Sources */,
-				DF16855D2B7E7AC200C39455 /* my_node_editor_menu_bar.cpp in Sources */,
 				DF1685472B7E1BA400C39455 /* imgui_impl_opengl2.cpp in Sources */,
 				DF1684EF2B7BA14400C39455 /* dess_simulator.cpp in Sources */,
-				DF1685312B7CEB6400C39455 /* my_menu_bar.cpp in Sources */,
 				DF16855A2B7E3DAA00C39455 /* gui_node_output.cpp in Sources */,
 				DF1685042B7BDF1300C39455 /* imgui_demo.cpp in Sources */,
+				DF1685642B7F7E6D00C39455 /* EditorLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

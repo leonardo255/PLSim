@@ -9,14 +9,19 @@
 
 #include "dess_simulator.hpp"
 #include "product_movement_event.hpp"
-#include "app_gui.hpp"
+#include "EditorLayer.hpp"
+#include "App.hpp"
+
+extern App* CreateApp();
 
 
 int main(int argc, const char * argv[]) {
     
-    AppGUI app;
-    app.Run();
+    auto app = CreateApp();
+    app->Run();
+    delete app;
     
+    /*
     std::shared_ptr<DESS_Simulator> simulator = std::make_shared<DESS_Simulator>();
     
     auto product = std::make_shared<Product>(std::vector<std::string>{"Source", "Assembly", "Drain"});
@@ -35,6 +40,6 @@ int main(int argc, const char * argv[]) {
     
     simulator->run();
     
-
+     */
     return 0;
 }
