@@ -22,7 +22,10 @@ void HierarchyPanel::OnImGuiRender(int w, int h)
     
     // List of Scenes
     // m_Registry->GetScenes()
-    // For each Entity in Scene -> DrawNodeEntity();
+    // m_Registry->GetCurrentScene()
+    // For each scene in Scenes -> DrawScene()
+    //      If scene == currentScene
+    //          For each Entity in Scene -> DrawNodeEntity();
     
     if (ImGui::Button(ICON_MDI_PLUS "Add Scene")){}
     ImGui::EndChild();
@@ -39,6 +42,11 @@ void HierarchyPanel::OnImGuiRender(int w, int h)
     ImGui::EndChild();
     
     ImGui::EndChild();
+}
+
+void HierarchyPanel::DrawScene()
+{
+    // Get Tag component?
 }
 
 void HierarchyPanel::DrawNodeEntity()

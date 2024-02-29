@@ -16,6 +16,7 @@ public:
     void OnImGuiRender(int w, int h);
     
 private:
+    void DrawScene();
     void DrawNodeEntity();
     void DrawProduct();
 };

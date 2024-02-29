@@ -42,6 +42,7 @@
 		DF544BB12B8776E600DB9568 /* HierarchyPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF544BAF2B8776E600DB9568 /* HierarchyPanel.cpp */; };
 		DF544BB42B8777DB00DB9568 /* InspectionPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF544BB22B8777DB00DB9568 /* InspectionPanel.cpp */; };
 		DFAF228E2B8519EF00410DAA /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFAF228C2B8519EF00410DAA /* Scene.cpp */; };
+		DFE9F6F42B90C96400A39FAE /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFE9F6F22B90C96400A39FAE /* Entity.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -138,6 +139,10 @@
 		DF544BB32B8777DB00DB9568 /* InspectionPanel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InspectionPanel.hpp; sourceTree = "<group>"; };
 		DFAF228C2B8519EF00410DAA /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		DFAF228D2B8519EF00410DAA /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		DFE9F6F22B90C96400A39FAE /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		DFE9F6F32B90C96400A39FAE /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
+		DFE9F6F62B90D93800A39FAE /* TagComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagComponent.h; sourceTree = "<group>"; };
+		DFE9F6F72B90DE1A00A39FAE /* TransformComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				DF544BAB2B87769D00DB9568 /* Panels */,
-				DF1685482B7E267200C39455 /* node_editor */,
+				DF1685482B7E267200C39455 /* NodeEditor */,
 				DF1685622B7F7E6D00C39455 /* EditorLayer.cpp */,
 				DF1685632B7F7E6D00C39455 /* EditorLayer.hpp */,
 			);
@@ -290,12 +295,12 @@
 			path = imnode;
 			sourceTree = "<group>";
 		};
-		DF1685482B7E267200C39455 /* node_editor */ = {
+		DF1685482B7E267200C39455 /* NodeEditor */ = {
 			isa = PBXGroup;
 			children = (
 				DF1685492B7E268800C39455 /* base_elements */,
 			);
-			path = node_editor;
+			path = NodeEditor;
 			sourceTree = "<group>";
 		};
 		DF1685492B7E268800C39455 /* base_elements */ = {
@@ -434,10 +439,22 @@
 		DFAF228F2B8519F300410DAA /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				DFE9F6F52B90D90900A39FAE /* Components */,
 				DFAF228C2B8519EF00410DAA /* Scene.cpp */,
 				DFAF228D2B8519EF00410DAA /* Scene.hpp */,
+				DFE9F6F22B90C96400A39FAE /* Entity.cpp */,
+				DFE9F6F32B90C96400A39FAE /* Entity.hpp */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		DFE9F6F52B90D90900A39FAE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFE9F6F62B90D93800A39FAE /* TagComponent.h */,
+				DFE9F6F72B90DE1A00A39FAE /* TransformComponent.h */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,6 +528,7 @@
 				DF1684EC2B7B9DCC00C39455 /* node.cpp in Sources */,
 				DF1685072B7BDF1300C39455 /* imgui.cpp in Sources */,
 				DF1684D22B7900AE00C39455 /* main.cpp in Sources */,
+				DFE9F6F42B90C96400A39FAE /* Entity.cpp in Sources */,
 				DF16856A2B7F804A00C39455 /* Layer.cpp in Sources */,
 				DF1685A62B8124C100C39455 /* PLSimWindow.cpp in Sources */,
 				DF1685232B7BF31C00C39455 /* App.cpp in Sources */,
@@ -589,6 +607,7 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.3.9/include,
 					/usr/local/Cellar/sdl2/2.30.0/include,
+					/usr/local/Cellar/entt/3.13.1/include,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -645,6 +664,7 @@
 				HEADER_SEARCH_PATHS = (
 					/usr/local/Cellar/glfw/3.3.9/include,
 					/usr/local/Cellar/sdl2/2.30.0/include,
+					/usr/local/Cellar/entt/3.13.1/include,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
