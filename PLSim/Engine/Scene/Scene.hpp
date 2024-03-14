@@ -8,8 +8,10 @@
 #ifndef Scene_hpp
 #define Scene_hpp
 
+#include "UUID.hpp"
 #include <string>
 #include <entt/entity/registry.hpp>
+#include <unordered_map>
 
 class Entity;
 
@@ -24,10 +26,12 @@ public:
     ~Scene();
     
     Entity CreateEntity(const std::string& name = std::string());
+    Entity CreateEntityWithUUID(UUID uuid, const std::string& name = std::string());
     
     void OnSimulationStart();
     void OnSimulationStop();
     
+    void RenderScene();
     
     template<typename... Components>
     auto GetAllEntitiesWith()
@@ -37,6 +41,7 @@ public:
     
 private:
     entt::registry m_Registry;
+    std::unordered_map<UUID, entt::entity> m_EntityMap;
     
     template<typename T>
     void OnComponentAdded(Entity entity, T& component);

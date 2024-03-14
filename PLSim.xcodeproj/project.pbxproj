@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0079D72B921C7E00CE71A8 /* DefaultNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0079D52B921C7E00CE71A8 /* DefaultNode.cpp */; };
+		DF0079DA2B975A8200CE71A8 /* UUID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0079D82B975A8200CE71A8 /* UUID.cpp */; };
+		DF0079DF2B9762C000CE71A8 /* Renderer2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF0079DD2B9762C000CE71A8 /* Renderer2D.cpp */; };
 		DF1684D22B7900AE00C39455 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684D12B7900AE00C39455 /* main.cpp */; };
 		DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684DC2B793E0C00C39455 /* dtss_simulator.cpp */; };
 		DF1684E52B7B9A9C00C39455 /* product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF1684E32B7B9A9C00C39455 /* product.cpp */; };
@@ -58,6 +61,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF0079D52B921C7E00CE71A8 /* DefaultNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DefaultNode.cpp; sourceTree = "<group>"; };
+		DF0079D62B921C7E00CE71A8 /* DefaultNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DefaultNode.hpp; sourceTree = "<group>"; };
+		DF0079D82B975A8200CE71A8 /* UUID.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UUID.cpp; sourceTree = "<group>"; };
+		DF0079D92B975A8200CE71A8 /* UUID.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = UUID.hpp; sourceTree = "<group>"; };
+		DF0079DB2B9760D800CE71A8 /* IDComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDComponent.h; sourceTree = "<group>"; };
+		DF0079DD2B9762C000CE71A8 /* Renderer2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer2D.cpp; sourceTree = "<group>"; };
+		DF0079DE2B9762C000CE71A8 /* Renderer2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer2D.hpp; sourceTree = "<group>"; };
 		DF1684CE2B7900AE00C39455 /* PLSim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PLSim; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1684D12B7900AE00C39455 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DF1684DA2B793A9200C39455 /* bag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bag.h; sourceTree = "<group>"; };
@@ -158,6 +168,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF0079D32B921C5200CE71A8 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				DF0079D42B921C6600CE71A8 /* Nodes */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		DF0079D42B921C6600CE71A8 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				DF0079D52B921C7E00CE71A8 /* DefaultNode.cpp */,
+				DF0079D62B921C7E00CE71A8 /* DefaultNode.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		DF0079DC2B97629D00CE71A8 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				DF0079DD2B9762C000CE71A8 /* Renderer2D.cpp */,
+				DF0079DE2B9762C000CE71A8 /* Renderer2D.hpp */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
 		DF1684C52B7900AE00C39455 = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +365,8 @@
 				DF1685662B7F803800C39455 /* LayerStack.hpp */,
 				DF1685682B7F804A00C39455 /* Layer.cpp */,
 				DF1685692B7F804A00C39455 /* Layer.hpp */,
+				DF0079D82B975A8200CE71A8 /* UUID.cpp */,
+				DF0079D92B975A8200CE71A8 /* UUID.hpp */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -336,6 +374,7 @@
 		DF16856E2B7FACD800C39455 /* PLSim */ = {
 			isa = PBXGroup;
 			children = (
+				DF0079D32B921C5200CE71A8 /* Presets */,
 				DF1685A02B811E4C00C39455 /* src */,
 				DF1685712B7FDA9900C39455 /* assets */,
 				DF1684D82B7900E100C39455 /* dtss */,
@@ -348,6 +387,7 @@
 		DF16856F2B7FACE200C39455 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				DF0079DC2B97629D00CE71A8 /* Renderer */,
 				DF544BA42B87761400DB9568 /* Project */,
 				DFAF228F2B8519F300410DAA /* Scene */,
 				DF1685702B7FAD4E00C39455 /* gui */,
@@ -453,6 +493,7 @@
 			children = (
 				DFE9F6F62B90D93800A39FAE /* TagComponent.h */,
 				DFE9F6F72B90DE1A00A39FAE /* TransformComponent.h */,
+				DF0079DB2B9760D800CE71A8 /* IDComponent.h */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -514,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0079DA2B975A8200CE71A8 /* UUID.cpp in Sources */,
 				DF1685572B7E3D5800C39455 /* gui_node_input.cpp in Sources */,
 				DF1684DE2B793E0C00C39455 /* dtss_simulator.cpp in Sources */,
 				DF1685A32B811E5F00C39455 /* PLSimApp.cpp in Sources */,
@@ -522,6 +564,7 @@
 				DF16853D2B7E1A3F00C39455 /* imnodes.cpp in Sources */,
 				DF1684E52B7B9A9C00C39455 /* product.cpp in Sources */,
 				DF544BA72B87762700DB9568 /* Project.cpp in Sources */,
+				DF0079D72B921C7E00CE71A8 /* DefaultNode.cpp in Sources */,
 				DF1685672B7F803800C39455 /* LayerStack.cpp in Sources */,
 				DF544BB12B8776E600DB9568 /* HierarchyPanel.cpp in Sources */,
 				DF1685052B7BDF1300C39455 /* imgui_widgets.cpp in Sources */,
@@ -536,6 +579,7 @@
 				DF16856D2B7F835A00C39455 /* ImGuiLayer.cpp in Sources */,
 				DF1685062B7BDF1300C39455 /* imgui_draw.cpp in Sources */,
 				DF1685512B7E3AF600C39455 /* gui_link.cpp in Sources */,
+				DF0079DF2B9762C000CE71A8 /* Renderer2D.cpp in Sources */,
 				DFAF228E2B8519EF00410DAA /* Scene.cpp in Sources */,
 				DF544BB42B8777DB00DB9568 /* InspectionPanel.cpp in Sources */,
 				DF16850A2B7BDF2A00C39455 /* imgui_impl_glfw.cpp in Sources */,

@@ -61,6 +61,7 @@ void NodeEditorPanel::OnImGuiRender(int w, int h){
 
 }
 
+// To-Do: Change creation of node to scene
 gui::GuiNode& NodeEditorPanel::AddNode(const char* title) {
     
     int node_id = current_id++;
